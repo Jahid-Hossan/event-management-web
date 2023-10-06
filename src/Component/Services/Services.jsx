@@ -9,9 +9,10 @@ const Services = () => {
 
     return (
         <div>
-            <div className='my-5 md:my-10 text-center'>
-                <h2 className='text-2xl font-bold'>EVENT MANAGEMENT SERVICES</h2>
-                <p>We organize all type of social events</p>
+            <div className='py-5 md:py-10 text-center'>
+                {/* <h2 className='text-2xl font-bold'>EVENT MANAGEMENT SERVICES</h2>
+                <p>We organize all type of social events</p> */}
+                <h1 className=" text-5xl font-bold">Our Services</h1>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
