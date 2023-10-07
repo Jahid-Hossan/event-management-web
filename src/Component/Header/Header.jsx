@@ -4,10 +4,18 @@ import { ImMenu, ImCross } from 'react-icons/im';
 
 
 import logo from '../../assets/Untitled_design-removebg-preview.png'
+import { AuthContext } from '../../Provider/AuthProvider';
 
 
 const Header = () => {
     const [open, setOpen] = useState(true);
+
+    const { user, logOut } = useContext(AuthContext)
+
+    console.log(user)
+
+
+
     return (
         <section className='container mx-auto px-10 fixed z-10 bg-pink-500 '>
             <nav className='flex  top-0 lg:flex-row justify-between items-center'>
@@ -33,8 +41,12 @@ const Header = () => {
                 </div>
 
                 <div className="">
-                    <button className='btn bg-slate-800 text-purple-300'><NavLink to="/login"  >Log in</NavLink></button>
-                    {/* <img className="h-8 lg:h-16 rounded-full" src={logo} /> */}
+                    {
+                        user ?
+                            <button onClick={logOut} className='btn bg-slate-800 text-purple-300'><NavLink to="/login"  >Log Out</NavLink></button> :
+                            <button className='btn bg-slate-800 text-purple-300'><NavLink to="/login"  >Log in</NavLink></button>
+                    }
+
                 </div>
 
             </nav>

@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from 'react';
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import auth from './../firebase/firebase.config';
 
 export const AuthContext = createContext();
@@ -9,7 +9,7 @@ const AuthProvider = ({ children }) => {
     const [allData, setAllData] = useState();
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        fetch('data.json')
+        fetch('/data.json')
             .then(res => res.json())
             .then(data => setAllData(data))
     }, [])
@@ -32,6 +32,11 @@ const AuthProvider = ({ children }) => {
         return signInWithEmailAndPassword(auth, email, password)
     }
 
+    // 
+    const logOut = () => {
+        return signOut(auth)
+    }
+
     // state change
     useEffect(() => {
         const unSubs = onAuthStateChanged(auth, currentUser => {
@@ -48,7 +53,9 @@ const AuthProvider = ({ children }) => {
         popUpGoogle,
         passwordSignUp,
         logIn,
-        user
+        user,
+        loading,
+        logOut
     }
 
     return (

@@ -1,26 +1,50 @@
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from './../../Provider/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
 import { FcGoogle } from "react-icons/fc";
 import Swal from 'sweetalert2'
+import { useLocation } from 'react-router-dom';
 
 const Login = () => {
 
 
     const { popUpGoogle, logIn } = useContext(AuthContext)
+    const location = useLocation();
+    const navigate = useNavigate()
+
+    console.log(location)
 
     const provider = new GoogleAuthProvider()
     const handlePopUp = () => {
         popUpGoogle(provider)
-            .then(res => console.log(res))
-            .catch(err => console.log(err))
+            .then(res => {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Login Successful',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+                navigate(location?.state ? location.state : '/')
+            })
+            .catch(err => {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: `${err}`,
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            })
     }
 
     const handleLogin = (e) => {
         e.preventDefault()
         const email = e.target.email.value;
+        e.target.email.value = '';
         const password = e.target.password.value;
+        e.target.password.value = '';
         logIn(email, password)
             .then(res => {
                 Swal.fire({
@@ -30,6 +54,7 @@ const Login = () => {
                     showConfirmButton: false,
                     timer: 1500
                 })
+                navigate(location?.state ? location.state : '/')
             })
             .catch(err => {
                 Swal.fire({

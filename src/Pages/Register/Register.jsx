@@ -1,6 +1,6 @@
 
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 import Swal from 'sweetalert2'
 
@@ -8,6 +8,8 @@ import Swal from 'sweetalert2'
 const Register = () => {
 
     const { passwordSignUp } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate()
 
     const handleSignUp = (e) => {
         e.preventDefault()
@@ -26,8 +28,17 @@ const Register = () => {
                     showConfirmButton: false,
                     timer: 1500
                 })
+                navigate(location?.state ? location.state : '/')
             })
-            .catch(err => console.log(err))
+            .catch(err => {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: `${err}`,
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            })
     }
 
     return (
