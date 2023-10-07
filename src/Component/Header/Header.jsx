@@ -9,8 +9,8 @@ import logo from '../../assets/Untitled_design-removebg-preview.png'
 const Header = () => {
     const [open, setOpen] = useState(true);
     return (
-        <section className='container mx-auto px-10 bg-pink-500'>
-            <nav className='flex  lg:flex-row justify-between items-center'>
+        <section className='container mx-auto px-10 fixed z-10 bg-pink-500 '>
+            <nav className='flex  top-0 lg:flex-row justify-between items-center'>
 
                 <img className='h-8 md:h-16' src={logo} alt="" />
 
@@ -25,9 +25,9 @@ const Header = () => {
 
                         < li><NavLink to="/" >Home</NavLink></li>
 
-                        <li><NavLink   >Services</NavLink></li>
+                        <li><NavLink to='/service'  >Services</NavLink></li>
 
-                        <li><NavLink   >Contact Us</NavLink></li>
+                        <li><NavLink to="/contact"  >Contact Us</NavLink></li>
 
                     </ul>
                 </div>

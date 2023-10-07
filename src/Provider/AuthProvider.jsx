@@ -5,7 +5,7 @@ export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
     const [allData, setAllData] = useState();
     useEffect(() => {
-        fetch('/data.json')
+        fetch('data.json')
             .then(res => res.json())
             .then(data => setAllData(data))
     }, [])

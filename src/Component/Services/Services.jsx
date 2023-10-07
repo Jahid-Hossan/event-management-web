@@ -16,7 +16,7 @@ const Services = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
-                    allData.map(service => <Service key={service.id} service={service}></Service>)
+                    allData?.map(service => <Service key={service.id} service={service}></Service>)
                 }
             </div>
         </div>
