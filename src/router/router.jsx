@@ -4,9 +4,9 @@ import Error from "../Pages/Error/Error";
 import Home from "../Pages/Home/Home";
 import PrivetRouter from "../PrivetRouter/PrivetRouter";
 import EventDetails from "../Pages/EventDetails/EventDetails";
-import Service from "../Pages/Service/Service";
 import Login from './../Pages/Login/Login';
 import Register from "../Pages/Register/Register";
+import ServicePage from './../Pages/ServicePage/ServicePage';
 
 const router = createBrowserRouter([
     {
@@ -17,10 +17,11 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
+                loader: () => fetch('/projects.json'),
             },
             {
                 path: '/service',
-                element: <Service></Service>
+                element: <ServicePage></ServicePage>
             },
             {
                 path: '/service/:id',

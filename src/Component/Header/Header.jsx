@@ -17,8 +17,8 @@ const Header = () => {
 
 
     return (
-        <section className='container mx-auto px-10 fixed z-10 bg-pink-500 '>
-            <nav className='flex  top-0 lg:flex-row justify-between items-center'>
+        <section className='sticky top-0 z-10 bg-pink-500 '>
+            <nav className='flex container mx-auto  px-5 top-0 lg:flex-row justify-between items-center'>
 
                 <img className='h-8 md:h-16' src={logo} alt="" />
 

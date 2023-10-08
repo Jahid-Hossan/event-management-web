@@ -43,10 +43,10 @@ const Register = () => {
 
     return (
         <>
-            <div className="hero min-h-screen  bg-base-200">
+            <div className="hero   bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
 
-                    <div className="card flex-shrink-0 mt-14 w-full max-w-sm shadow-2xl bg-base-100">
+                    <div className="card flex-shrink-0  w-full max-w-sm shadow-2xl bg-base-100">
 
                         <form onSubmit={handleSignUp} className="px-10 pb-5 ">
                             <h1 className="text-2xl lg:text-4xl py-5 text-center px-4 font-bold">Register now!</h1>

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Weddings",
+        "image": "https://i.ibb.co/sqG8CQp/pexels-alexandre-saraiva-carniato-2299698.jpg",
+        "description": "Beautiful wedding ceremonies"
+    },
+    {
+        "id": 2,
+        "name": "Birthday Parties",
+        "image": "https://i.ibb.co/jWLncpj/birthday-2.jpg",
+        "description": "Fun-filled birthday celebrations"
+    },
+    {
+        "id": 3,
+        "name": "Anniversaries",
+        "image": "https://i.ibb.co/VjRZVXp/pexels-jonathan-borba-9703865.jpg",
+        "description": "Memorable anniversary events"
+    },
+    {
+        "id": 4,
+        "name": "Engagement Parties",
+        "image": "https://i.ibb.co/B4w12YH/angagement.jpg",
+        "description": "Joyful engagement gatherings"
+    },
+    {
+        "id": 5,
+        "name": "Retirement Parties",
+        "image": "https://i.ibb.co/HqrwZNC/engagement2.jpg",
+        "description": "Farewell retirement parties"
+    },
+    {
+        "id": 6,
+        "name": "Baby Shower",
+        "image": "https://i.ibb.co/Cw84sj9/pexels-trung-nguyen-5096596.jpg",
+        "description": "Sweet baby shower celebrations"
+    },
+    {
+        "id": 7,
+        "name": "Engagement Parties",
+        "image": "https://i.ibb.co/H7gd419/pexels-ibrahim-boran-903400.jpg",
+        "description": "Memorable anniversary events"
+    },
+    {
+        "id": 8,
+        "name": "Birthday Parties",
+        "image": "https://i.ibb.co/yYhmjnQ/pexels-lukas-574011.jpg",
+        "description": "Graduation celebrations"
+    },
+    {
+        "id": 9,
+        "name": "Family Reunion",
+        "image": "https://i.ibb.co/1zvk62y/pexels-joel-paim-2291462.jpg",
+        "description": "Festive holiday gatherings"
+    },
+    {
+        "id": 10,
+        "name": "Reunions",
+        "image": "https://i.ibb.co/WVZw50f/pexels-sergio-souza-1779416.jpg",
+        "description": "Joyful reunions with loved ones"
+    },
+    {
+        "id": 11,
+        "name": "Birthday Parties",
+        "image": "https://i.ibb.co/sqG8CQp/pexels-alexandre-saraiva-carniato-2299698.jpg",
+        "description": "Productive corporate team retreats"
+    },
+    {
+        "id": 12,
+        "name": "Anniversaries",
+        "image": "https://i.ibb.co/vzdHwyR/pexels-asad-photo-maldives-169198.jpg",
+        "description": "Fundraising charity events"
+    }
+]

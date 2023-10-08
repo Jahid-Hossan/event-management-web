@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Service = ({ service }) => {
     const { event_type, image, price, id } = service;
-    console.log(service)
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
+
     return (
-        <div className=" px-10 py-20  space-y-3 text-white text-center rounded-md" style={{
+        <div data-aos="zoom-in-up" className=" px-10 py-20  space-y-3 text-white text-center hover: rounded-md" style={{
             backgroundImage: `url(${image})`,
             backgroundColor: 'rgba(0,0,0, .5)',
             backgroundBlendMode: 'overlay',
