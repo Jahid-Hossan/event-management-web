@@ -20,7 +20,7 @@ const LatestProjects = () => {
 
     return (
 
-        <div>
+        <div className='container mx-auto'>
             <div className='text-center font-bold text-3xl py-5'>
                 <h2>LATEST PROJECTS</h2>
             </div>

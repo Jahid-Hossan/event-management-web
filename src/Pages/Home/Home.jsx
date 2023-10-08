@@ -13,7 +13,6 @@ const Home = () => {
             <Banner></Banner>
             <Banner2></Banner2>
             <div className='py-5 md:py-10 text-center'>
-
                 <h1 className=" text-5xl font-bold">Our Services</h1>
             </div>
             <Services></Services>

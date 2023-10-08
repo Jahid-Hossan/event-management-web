@@ -45,6 +45,35 @@ const Login = () => {
         e.target.email.value = '';
         const password = e.target.password.value;
         e.target.password.value = '';
+
+        if (password.length < 6) {
+            return Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Your password should have at least 6 characters or longer',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+        else if (!/[A-Z]/.test(password)) {
+            return Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Your password should have at least one capital letter',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+        else if (!/[!@#$%^&*]/.test(password)) {
+            return Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Your password should have at least one special character',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+
         logIn(email, password)
             .then(res => {
                 Swal.fire({
@@ -98,8 +127,8 @@ const Login = () => {
                             </label>
 
                         </form>
-                        <div className='text-center py-5'>
-                            <button onClick={handlePopUp} className="btn gap-0 btn-sm "><FcGoogle></FcGoogle>oogle</button>
+                        <div className='text-center  py-5'>
+                            <button onClick={handlePopUp} className="btn text-white btn-neutral hover:bg-white hover:text-black gap-0 btn-sm "><FcGoogle></FcGoogle>oogle</button>
                         </div>
                     </div>
                 </div>

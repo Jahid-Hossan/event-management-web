@@ -10,7 +10,7 @@ const PrivetRouter = ({ children }) => {
     const location = useLocation();
 
     if (loading) {
-        return <Spinner className="h-16 w-16 text-gray-900/50" />;
+        return <Spinner className="mx-auto h-16 w-16 my-[40vh] text-pink-500/50" />;
     }
 
     if (!user) {

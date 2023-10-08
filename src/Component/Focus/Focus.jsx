@@ -4,7 +4,7 @@ import { FaCity } from 'react-icons/fa6'
 
 const Focus = () => {
     return (
-        <div className='py-10 px-5 bg-white relative text-center lg:flex justify-between '>
+        <div className='py-10 px-5 container mx-auto  text-center lg:flex justify-between '>
             <div className=" space-y-3  w-96">
                 <IoColorPaletteOutline className='text-6xl mx-auto'></IoColorPaletteOutline>
                 <h2 className='text-2xl font-semibold'>UNIQUE DESIGN</h2>
