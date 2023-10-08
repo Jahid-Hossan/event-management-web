@@ -21,7 +21,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/service',
-                element: <ServicePage></ServicePage>
+                element: <PrivetRouter><ServicePage></ServicePage></PrivetRouter>
             },
             {
                 path: '/service/:id',

@@ -5,6 +5,7 @@ import LatestProjects from '../../Component/LatestProjects/LatestProjects';
 import Focus from '../../Component/Focus/Focus';
 import Banner2 from './../../Component/Banner2/Banner2';
 import Banner3 from '../../Component/Banner3/Banner3';
+import Banner4 from '../../Component/Banner4/Banner4';
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <Services></Services>
             <Banner3></Banner3>
             <LatestProjects></LatestProjects>
+            <Banner4></Banner4>
             <Focus></Focus>
         </div>
     );
