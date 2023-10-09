@@ -8,6 +8,7 @@ import Login from './../Pages/Login/Login';
 import Register from "../Pages/Register/Register";
 import ServicePage from './../Pages/ServicePage/ServicePage';
 import Contact from "../Pages/Contact/Contact";
+import Gallery from "../Pages/Gallery/Gallery";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact></Contact>
+            },
+            {
+                path: '/gallery',
+                element: <PrivetRouter><Gallery></Gallery></PrivetRouter>
             }
         ]
     }

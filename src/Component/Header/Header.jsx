@@ -13,7 +13,7 @@ const Header = () => {
 
     const { user, logOut } = useContext(AuthContext)
 
-    console.log(user?.photoURL)
+    console.log(user)
 
 
 
@@ -21,7 +21,9 @@ const Header = () => {
         <section className='sticky top-0 z-10 bg-pink-500 '>
             <nav className='flex container mx-auto  px-5 top-0 lg:flex-row justify-between items-center'>
 
-                <img className='h-8 text-white md:h-16' src={logo} alt="" />
+
+
+                <img className='h-8 py-2 hidden md:block text-white md:h-16' src={logo} alt="" />
 
                 <div className='-order-1 lg:order-none'>
                     <div>
@@ -40,22 +42,50 @@ const Header = () => {
                         } to='/service'  >Services</NavLink></li>
                         <li className='text-white' ><NavLink className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
+                        } to="/gallery"  >Venue</NavLink></li>
+                        <li className='text-white' ><NavLink className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "active" : ""
                         } to="/contact"  >Contact Us</NavLink></li>
 
                     </ul>
+
                 </div>
 
-                <div>
+
+                <div className='py-2'>
 
                     {
                         user ?
-                            <div className="flex gap-2 p-1">
+                            // <div className="flex-none">
+                            //     <ul className="menu-horizontal">
+                            //         <li>
+                            //             <details className=''>
+                            //                 <summary className='list-none'>
+                            //                     <div className="w-10 md:w-11 mask mask-circle">
+                            //                         <img src={user?.photoURL} />
+                            //                         {/* <h2>user.displayName</h2> */}
+                            //                     </div>
+                            //                 </summary>
+                            //                 <ul className="py-2  px-4 bg-pink-500 space-y-5 right-3">
+                            //                     <li className='text-white text-lg font-semibold'><a>{user?.displayName}</a></li>
+                            //                     <li><button onClick={logOut} className=' w-full px-4 hover:bg-white hover:text-black text-white font-medium md:font-semibold hover:duration-500 border-2 rounded-full py-1'><NavLink to="/login"  >Log Out</NavLink></button></li>
+                            //                 </ul>
+                            //             </details>
+                            //         </li>
+                            //     </ul>
+                            // </div>
+                            <div className="flex gap-2 items-center">
                                 <div className="w-10 md:w-11 mask mask-circle">
                                     <img src={user.photoURL} />
-                                </div><button onClick={logOut} className='px-2 md:px-4 hover:bg-white hover:text-black text-white font-medium md:font-semibold hover:duration-500 border-2 rounded-full py-1 md:py-2'><NavLink to="/login"  >Log Out</NavLink></button>
+                                    {/* <h2>user.displayName</h2> */}
+                                </div>
+                                <h2 className='text-white text-lg font-semibold'>{user.displayName}</h2>
+                                <button onClick={logOut} className='px-4 hover:bg-white hover:text-black text-white font-medium md:font-semibold hover:duration-500 border-2 rounded-full py-2'><NavLink to="/login"  >Log Out</NavLink></button>
                             </div>
                             :
-                            <button className=''><NavLink className='px-4 hover:bg-white hover:text-black text-white font-semibold hover:duration-500 border-2 rounded-full py-2' to="/login"  >Log in</NavLink></button>
+                            <div className='py-2'>
+                                <button className=''><NavLink className='px-4 hover:bg-white hover:text-black text-white font-medium md:font-semibold hover:duration-500 border-2 rounded-full py-2' to="/login"  >Log in</NavLink></button>
+                            </div>
                     }
 
                 </div>

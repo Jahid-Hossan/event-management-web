@@ -7,7 +7,7 @@ import Swal from 'sweetalert2'
 
 const Register = () => {
 
-    const { passwordSignUp } = useContext(AuthContext);
+    const { passwordSignUp, handleUpdateUser } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate()
 
@@ -17,17 +17,52 @@ const Register = () => {
         e.target.name.value = '';
         const email = e.target.email.value;
         e.target.email.value = '';
+        const image = e.target.img.value;
+        e.target.img.value = '';
         const password = e.target.password.value;
         e.target.password.value = '';
+
+        if (password.length < 6) {
+            return Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Your password should have at least 6 characters or longer',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+        else if (!/[A-Z]/.test(password)) {
+            return Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Your password should have at least one capital letter',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+        else if (!/[!@#$%^&*]/.test(password)) {
+            return Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Your password should have at least one special character',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+        console.log(image, name)
         passwordSignUp(email, password)
             .then(res => {
-                Swal.fire({
-                    position: 'center',
-                    icon: 'success',
-                    title: 'Register Successful',
-                    showConfirmButton: false,
-                    timer: 1500
-                })
+                handleUpdateUser(name, image)
+                    .then(() => {
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'success',
+                            title: 'Register Successful',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
+                    })
+
                 navigate(location?.state ? location.state : '/')
             })
             .catch(err => {
@@ -58,6 +93,12 @@ const Register = () => {
                                 <input type="text" name='name' placeholder="Name" className="input input-bordered" required />
                             </div>
 
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Photo</span>
+                                </label>
+                                <input type="text" name='img' placeholder="Photo Url" className="input input-bordered" required />
+                            </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>

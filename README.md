@@ -1,8 +1,15 @@
-# React + Vite
+Feature of my project:-
+1. responsive design 
+One of the best feature is responsive design, which is very necessary in day-to-day life. Every user doesn't have a computer. In that case, our website will help them browse on mobile and tablet devices. We have a very clean UI. Users will be satisfied with our website.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2.Pop up login.
+user can login to this website via google popup. without entering email and password.
 
-Currently, two official plugins are available:
+3.profile pic in navigation bar.
+user can see their profile picture in the navigation bar. so they can see with which account they have logged in.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+4.Active nav bar.
+user can see in which page they are in. we implement active route setup for the user .
+
+5.privet router.
+user can not use some feature without log in the website. and our website is very user friendly. 

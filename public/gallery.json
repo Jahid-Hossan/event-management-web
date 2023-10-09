@@ -1,0 +1,154 @@
+[
+    {
+        "id": 2,
+        "title": "Sweet 16 Birthday Bash",
+        "description": "A fun-filled birthday party to celebrate turning 16 in style.",
+        "price": 2500,
+        "venue": "Downtown Event Center",
+        "img": "https://i.ibb.co/K2tXryG/pexels-media-9692335-1696801882659.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Engagement Soiree",
+        "description": "A romantic evening to celebrate the engagement of a beautiful couple.",
+        "price": 5000,
+        "venue": "Seaside Villa",
+        "img": "https://i.ibb.co/L9SZgd6/pexels-media-14161195-1696801898409.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Retirement Farewell",
+        "description": "A heartfelt farewell party to honor a colleague's retirement.",
+        "price": 3000,
+        "venue": "Lakeside Clubhouse",
+        "img": "https://i.ibb.co/SyQcp4Q/pexels-media-13045649-1696801912002.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Baby Shower Joy",
+        "description": "A joyful celebration to welcome the arrival of a precious baby.",
+        "price": 2000,
+        "venue": "Cozy Garden Pavilion",
+        "img": "https://i.ibb.co/3SBnDHX/pexels-media-8063169-1696801945118.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Silver Anniversary",
+        "description": "A silver-themed anniversary party to mark 25 years of love and togetherness.",
+        "price": 3500,
+        "venue": "Elegant Ballroom",
+        "img": "https://i.ibb.co/MBNDGR2/pexels-media-14158265-1696801962597.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Quinceañera Fiesta",
+        "description": "A traditional quinceañera celebration for a young lady's 15th birthday.",
+        "price": 2800,
+        "venue": "Spanish Villa",
+        "img": "https://i.ibb.co/TmMr2qG/pexels-media-8887264-1696801978088.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Graduation Gala",
+        "description": "A glamorous graduation party to celebrate academic achievements.",
+        "price": 1800,
+        "venue": "University Convention Center",
+        "img": "https://i.ibb.co/vVM9XjH/pexels-media-14703685-1696802013881.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Family Reunion Extravaganza",
+        "description": "A lively family reunion event with games, food, and bonding.",
+        "price": 1200,
+        "venue": "Riverside Park Pavilion",
+        "img": "https://i.ibb.co/Yd9n7q0/pexels-media-169192-1696802023726.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Couples' Retreat",
+        "description": "A romantic getaway weekend for couples to rekindle their love.",
+        "price": 4500,
+        "venue": "Mountain Resort Cabins",
+        "img": "https://i.ibb.co/SdgT422/pexels-media-169196-1696802033607.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Mardi Gras Masquerade",
+        "description": "A lively and colorful Mardi Gras celebration with masks, music, and dance.",
+        "price": 2800,
+        "venue": "French Quarter Ballroom",
+        "img": "https://i.ibb.co/Y2NXBsX/pexels-media-17206082-1696802067506.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Hawaiian Luau",
+        "description": "A tropical Hawaiian luau with leis, hula dancing, and a pig roast.",
+        "price": 2200,
+        "venue": "Beachside Tiki Hut",
+        "img": "https://i.ibb.co/RNRd0BB/pexels-media-16743492-1696802082192.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Garden Tea Party",
+        "description": "An elegant garden tea party with fine teas, pastries, and classical music.",
+        "price": 1800,
+        "venue": "Botanical Gardens",
+        "img": "https://i.ibb.co/7GPT30C/pexels-media-12954022-1696802110486.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Bollywood Night",
+        "description": "A vibrant Bollywood-themed dance party with Indian cuisine and music.",
+        "price": 2700,
+        "venue": "Exotic Banquet Hall",
+        "img": "https://i.ibb.co/x83cKGH/pexels-media-16120212-1696802123225.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Barnyard Hoedown",
+        "description": "A fun-filled barnyard hoedown with square dancing, BBQ, and hayrides.",
+        "price": 1600,
+        "venue": "Rustic Barn",
+        "img": "https://i.ibb.co/G0jQZSy/pexels-media-15138911-1696802138326.jpg"
+    },
+    {
+        "id": 16,
+        "title": "Halloween Haunt",
+        "description": "A spooky Halloween party with costumes, haunted house, and eerie decorations.",
+        "price": 2000,
+        "venue": "Haunted Mansion",
+        "img": "https://i.ibb.co/yfSMjZt/pexels-media-12303272-1696802146796.jpg"
+    },
+    {
+        "id": 17,
+        "title": "Carnival Extravaganza",
+        "description": "A colorful carnival event with games, rides, and cotton candy.",
+        "price": 2500,
+        "venue": "Fairgrounds",
+        "img": "https://i.ibb.co/16jcN0y/pexels-media-14125495-1696802165141.jpg"
+    },
+    {
+        "id": 18,
+        "title": "Artists' Showcase",
+        "description": "An art exhibition showcasing the work of local artists with wine and cheese.",
+        "price": 1200,
+        "venue": "Gallery Space",
+        "img": "https://i.ibb.co/yypwmNh/pexels-media-16120214-1696802179042.jpg"
+    },
+    {
+        "id": 19,
+        "title": "Tropical Beach Party",
+        "description": "A tropical beach party with cocktails, beach volleyball, and live music.",
+        "price": 2800,
+        "venue": "Sandy Shore Resort",
+        "img": "https://i.ibb.co/R22HDgb/pexels-media-16120231-1696802228107.jpg"
+    },
+    {
+        "id": 20,
+        "title": "Gatsby-era Roaring Twenties",
+        "description": "A glamorous 1920s-themed party with flapper dresses, jazz music, and champagne.",
+        "price": 3500,
+        "venue": "Art Deco Ballroom",
+        "img": "https://i.ibb.co/2MFMdXV/pexels-media-11845552-1696802242627.jpg"
+    }
+]
